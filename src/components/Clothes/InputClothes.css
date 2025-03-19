@@ -1,0 +1,60 @@
+
+.input-clothes-form {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 12px;
+  background-color: #f8f8f8;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+
+.input-group input {
+    width: 50px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+
+.input-group input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+
+.add-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.add-btn:hover {
+    background-color: #45a049;
+}

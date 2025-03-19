@@ -1,0 +1,74 @@
+
+.available-clothes-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.clothes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.single-clothes-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.single-clothes-card:hover {
+    transform: scale(1.03);
+}
+
+
+.clothes-details {
+    text-align: center;
+}
+
+
+.clothes-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+.clothes-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+
+.clothes-sizes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.clothes-sizes span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+.clothes-price {
+    font-size: 1rem;
+    color: #2d7a2d;
+    font-weight: bold;
+}
