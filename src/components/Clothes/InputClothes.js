@@ -43,11 +43,11 @@ function InputClothes({ item }) {
         setValueForM(valueforM - MValue);
         setValueForL(valueforL - LValue);
         
-        if (SValue<=0 && MValue<=0 && LValue<=0) {
-            return;
-        }
-
-        const obj = {
+        // if (SValue>valueforS || MValue>valueforM || LValue>valueforL) {
+        //     alert("entered amount is greater than the available amount");
+        // }
+        
+            const obj = {
             type: "ADD", payload: {
                 S: SValue,
                 M: MValue,
@@ -59,6 +59,7 @@ function InputClothes({ item }) {
             }
         }
         contextFunction.AddToCart(obj);
+        
 
     }
 
@@ -72,7 +73,7 @@ function InputClothes({ item }) {
           name={`S-${item.id}`}
           type="number"
           min="0"
-          max={item.S}
+          max={valueforS}
           defaultValue="0"
         />
       </div>
@@ -85,7 +86,7 @@ function InputClothes({ item }) {
           name={`M-${item.id}`}
           type="number"
           min="0"
-          max={item.M}
+          max={valueforM}
           defaultValue="0"
         />
       </div>
@@ -98,7 +99,7 @@ function InputClothes({ item }) {
           name={`L-${item.id}`}
           type="number"
           min="0"
-          max={item.L}
+          max={valueforL}
           defaultValue="0"
         />
       </div>
