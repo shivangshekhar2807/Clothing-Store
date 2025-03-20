@@ -43,9 +43,9 @@ function InputClothes({ item }) {
         setValueForM(valueforM - MValue);
         setValueForL(valueforL - LValue);
         
-        // if (SValue>valueforS || MValue>valueforM || LValue>valueforL) {
-        //     alert("entered amount is greater than the available amount");
-        // }
+        if (SValue<=0 && MValue<=0 && LValue<=0) {
+            return;
+        }
         
             const obj = {
             type: "ADD", payload: {
